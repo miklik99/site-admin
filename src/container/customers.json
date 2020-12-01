@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "logo": "logo.png",
+        "name": "Specsavers Denmark",
+        "com_id": 123,
+        "lae_id": 313,
+        "size": "69 GB",
+        "status": "active"
+    },
+    {
+        "id": 2,
+        "logo": "logo.png",
+        "name": "Yunar",
+        "com_id": 123,
+        "lae_id": 313,
+        "size": "69 GB",
+        "status": "active"
+    },
+    {
+        "id": 3,
+        "logo": "logo.png",
+        "name": "Coca-Cola",
+        "com_id": 123,
+        "lae_id": 313,
+        "size": "69 GB",
+        "status": "active"
+    },
+    {
+        "id": 4,
+        "logo": "logo.png",
+        "name": "Helly Hansen",
+        "com_id": 123,
+        "lae_id": 313,
+        "size": "69 GB",
+        "status": "active"
+    },
+    {
+        "id": 5,
+        "logo": "logo.png",
+        "name": "Brand Enterprise",
+        "com_id": 123,
+        "lae_id": 313,
+        "size": "69 GB",
+        "status": "active"
+    },
+    {
+        "id": 6,
+        "logo": "logo.png",
+        "name": "Mercedes-Benz Europe",
+        "com_id": 123,
+        "lae_id": 313,
+        "size": "69 GB",
+        "status": "active"
+    },
+    {
+        "id": 7,
+        "logo": "logo.png",
+        "name": "BMW Nordic",
+        "com_id": 123,
+        "lae_id": 313,
+        "size": "69 GB",
+        "status": "active"
+    }
+]
