@@ -2,8 +2,9 @@ import React from 'react';
 import Controllers from './Controllers/Controllers';
 import './Customers.sass';
 import Client from './Client';
+import arrow from './arrow-body-down.svg';
 
-const Customers = ({ customers, searchChange }) => {
+const Customers = ({ customers, searchChange, sort, sorted }) => {
     return (
         <div className="customers">
             <h1>Customer Overview</h1>
@@ -14,7 +15,7 @@ const Customers = ({ customers, searchChange }) => {
                     <div className="right">
                         <p>COM ID</p>
                         <p>LEG ID</p>
-                        <p>SIZE</p>
+                        <p className="size"onClick={sort}>SIZE{sorted ? <img src={arrow} alt="arrow"/> : <img src={arrow} alt="arrow" style={{transform: "rotate(180deg)"}}/>}</p>
                         <p>STATUS</p>
                     </div>
                 </div>

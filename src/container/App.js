@@ -10,12 +10,30 @@ class App extends Component {
     super()
     this.state = {
       customers: customers,
-      searchfield: ''
+      searchfield: '',
+      sorted: false
     }
   }
 
   onSearchChange = (event) => {
     this.setState({searchfield: event.target.value})
+  }
+
+  sort = () => {
+    const { customers, sorted} = this.state;
+    if(sorted) {
+      const sorted = customers.sort((a,b) => (a.size > b.size) ? 1 : -1);
+      this.setState({
+        customers: sorted,
+        sorted: false
+      });
+    } else {
+      const sorted = customers.sort((a,b) => (a.size < b.size) ? 1 : -1);
+      this.setState({
+        customers: sorted,
+        sorted: true
+      });
+    }
   }
 
   render() {
@@ -26,8 +44,10 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <div className="flex-components">
         <Sidebar />
-        <Customers customers={filteredCustomers} searchChange={this.onSearchChange}/>
+        <Customers customers={filteredCustomers} sort={this.sort} sorted={this.state.sorted} searchChange={this.onSearchChange}/>
+        </div>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchIcon from './search.png'
 import './Controllers.sass';
+import plus from './plus.svg'
 
 const Controllers = ({ searchChange }) => {
     return (
@@ -9,7 +10,9 @@ const Controllers = ({ searchChange }) => {
                 <img src={SearchIcon} />
                 <input type="search" placeholder="Customer or ID" onChange={searchChange}/>
             </div>
-            <button />
+            <div className="plus">
+            <img src={plus} />
+            </div>
         </div>
     );
 }

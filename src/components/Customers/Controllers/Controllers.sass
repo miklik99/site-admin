@@ -1,6 +1,5 @@
 .controllers
-  width: 75%
-  min-width: 777px
+  width: 100%
   display: flex
   justify-content: space-between
   align-items: center
@@ -30,10 +29,17 @@
       &:focus
         outline: none
 
-  button
+  .plus
     border: 0px
     width: 30px
     height: 30px
     border-radius: 15px
     background-color: #407cff
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)
+    display: flex
+    justify-content: center
+    align-items: center
+    &:focus
+      outline: none
+    &:hover
+      cursor: pointer
